@@ -1,0 +1,19 @@
+# conda env create -f environment.yml
+# conda env update -f environment.yml
+
+name: hf_agent
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyter
+  - pip
+  - pip:
+    - python-dotenv
+    - huggingface_hub
+    - smolagents
+    - bitsandbytes
+    - peft
+    - trl
+    - tensorboardX
+    - wandb
